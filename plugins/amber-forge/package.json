@@ -1,0 +1,57 @@
+{
+  "name": "amber-forge",
+  "description": "Amber Forge — an amber CRT-style UI skin for DeepSeek Harness: theme token overrides, monospace typography, a custom brand mark, a rewritten new-session slogan, and a wider agent-preset selector.",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./assets/*": "./assets/*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "@deepseek-ai/dsh-client-runtime": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-client-connection": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-client-ui-theme": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.3.0-0"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HCGuo2000/hcguo-public.git",
+    "directory": "plugins/amber-forge"
+  },
+  "homepage": "https://github.com/HCGuo2000/hcguo-public/tree/main/plugins/amber-forge",
+  "bugs": {
+    "url": "https://github.com/HCGuo2000/hcguo-public/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "skin",
+    "crt",
+    "amber"
+  ]
+}

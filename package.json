@@ -1,0 +1,6 @@
+{
+  "name": "hcguo-public",
+  "private": true,
+  "description": "HCGuo2000's public DeepSeek Harness plugin collection - each plugin is independently installable from plugins/.",
+  "license": "MIT"
+}
