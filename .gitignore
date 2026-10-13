@@ -1,0 +1,32 @@
+# ---- Windows ----
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+*.lnk
+$RECYCLE.BIN/
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- 临时与日志 ----
+*.tmp
+*.temp
+*.log
+_tmp_*
+~$*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# ---- Node.js ----
+node_modules/
+dist/
+.cache/
