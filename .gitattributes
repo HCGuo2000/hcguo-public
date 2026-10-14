@@ -1,0 +1,7 @@
+# Normalize line endings: the repository content is LF; Windows checkouts may
+# still be CRLF but the committed bytes stay LF so published artifacts match.
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.woff binary
+*.woff2 binary
