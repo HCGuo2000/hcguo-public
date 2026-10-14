@@ -1,7 +1,11 @@
-# Amber Forge 琥珀圣炉 — bundle patch: inserts the dual-face plugin row into
-# the web profile roster. Applied as a profile bundle layer (the
-# `dsh.bundle.patch` manifest field); install with
-# `dsh plugin --profile web add link:<repo>/amber-forge`.
+# Amber Forge 琥珀圣炉 — bundle patch.
+#
+# Inserts the plugin row into whichever profile lists this package in its
+# `dsh.profile.bundles`. The row is the host half (lib/index.js); the skin
+# itself is the client half served from exports["./client"].
+#
+# Install into a profile with:
+#   dsh plugin add https://github.com/HCGuo2000/hcguo-public/tree/main/plugins/amber-forge
 - insert:
     - id: amber-forge
       name: 'amber-forge'

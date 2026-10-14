@@ -4,7 +4,7 @@ An amber CRT-style UI skin for DeepSeek Harness — community plugin.
 
 ## What it does
 
-Everything below is client-side presentation. The host half declares only its identity.
+Everything below is client-side presentation. The host half carries no logic of its own: it declares `name` / `inject` and an empty `apply()`, and all behaviour lives in the client half.
 
 ### Theme tokens
 

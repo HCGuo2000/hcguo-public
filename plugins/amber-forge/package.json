@@ -1,7 +1,7 @@
 {
   "name": "amber-forge",
   "description": "Amber Forge — an amber CRT-style UI skin for DeepSeek Harness: theme token overrides, monospace typography, a custom brand mark, a rewritten new-session slogan, and a wider agent-preset selector.",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
